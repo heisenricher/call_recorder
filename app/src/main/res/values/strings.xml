@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Call Recorder</string>
+    <string name="accessibility_service_description">Enables automatic and silent call detection to start and stop call recording in the background.</string>
+    
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Call Recorder Service</string>
+    <string name="notification_channel_description">Required silent foreground notification for recording calls</string>
+    <string name="recording_notification_title">Call Recording Active</string>
+    <string name="recording_notification_text">Recording in progress...</string>
+    <string name="service_notification_title">Call Recorder</string>
+    <string name="service_notification_text">Monitoring calls</string>
+
+    <!-- General UI strings -->
+    <string name="recordings_title">Recordings</string>
+    <string name="recording_enabled">Recording Active</string>
+    <string name="recording_disabled">Recording Paused</string>
+    <string name="no_recordings_title">No Recordings Yet</string>
+    <string name="no_recordings_subtitle">Calls will be recorded automatically when received or made.</string>
+    <string name="settings_title">Settings</string>
+    
+    <!-- Permissions & Setup strings -->
+    <string name="grant_permissions_title">Permissions Required</string>
+    <string name="grant_permissions_desc">Call Recorder requires microphone, phone state, and storage permissions to record and save calls.</string>
+    <string name="grant_permissions_button">Grant Permissions</string>
+    <string name="accessibility_prompt_title">Enable Accessibility Service</string>
+    <string name="accessibility_prompt_desc">To detect when calls start and end automatically, please enable the Call Recorder Accessibility Service in system settings.</string>
+    <string name="open_accessibility_settings">Open Settings</string>
+    <string name="storage_permission_prompt_title">All Files Access Needed</string>
+    <string name="storage_permission_prompt_desc">On Android 12+, Call Recorder needs All Files Access to save MP3 files to your external storage folder.</string>
+    <string name="grant_storage_access">Grant Storage Access</string>
+    
+    <!-- Legal disclaimer -->
+    <string name="legal_disclaimer_title">Legal Notice</string>
+    <string name="legal_disclaimer_text">Call recording laws vary by region. In many jurisdictions, recording a conversation requires the consent of one or all parties involved. You are solely responsible for complying with all applicable laws in your jurisdiction.</string>
+    <string name="agree_and_continue">Agree &amp; Continue</string>
+    
+    <!-- Call types -->
+    <string name="call_incoming">Incoming</string>
+    <string name="call_outgoing">Outgoing</string>
+    <string name="call_unknown">Call</string>
+    
+    <!-- Actions -->
+    <string name="delete">Delete</string>
+    <string name="delete_confirm_title">Delete Recording?</string>
+    <string name="delete_confirm_message">This will permanently delete the audio recording and its metadata.</string>
+    <string name="cancel">Cancel</string>
+</resources>
