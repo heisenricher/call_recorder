@@ -1,5 +1,12 @@
 # Silent Call Recorder for Android
 
+[![Direct APK Download](https://img.shields.io/badge/Download-APK%20(v1.0.0)-brightgreen?style=for-the-badge&logo=android)](https://github.com/heisenricher/call_recorder/releases/latest/download/app-debug.apk)
+[![GitHub Release](https://img.shields.io/badge/GitHub-Releases-blue?style=for-the-badge&logo=github)](https://github.com/heisenricher/call_recorder/releases/latest)
+
+> 📲 **Direct Download Link**: [**Download Call Recorder APK (Latest)**](https://github.com/heisenricher/call_recorder/releases/latest/download/app-debug.apk)
+> 
+> Alternative link: [**Download from Releases Page**](https://github.com/heisenricher/call_recorder/releases/tag/v1.0.0-3)
+
 A modern, simple, and silent Android call recorder app written in **Kotlin** with **Jetpack Compose**, **Room Database**, and **Hilt Dependency Injection**.
 
 Designed to operate seamlessly on **Android 12+ (API 31+)**.
