@@ -61,7 +61,7 @@ fun SettingsScreen(
     viewModel: SettingsViewModel,
     onNavigateBack: () -> Unit
 ) {
-    val context = LocalContext::current
+    val context = LocalContext.current
     val recordingCount by viewModel.recordingCount.collectAsState()
     val totalStorageUsed by viewModel.totalStorageUsed.collectAsState()
     val storagePath by viewModel.storagePath.collectAsState()

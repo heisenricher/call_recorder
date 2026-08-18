@@ -76,7 +76,7 @@ fun HomeScreen(
     viewModel: HomeViewModel,
     onNavigateToSettings: () -> Unit
 ) {
-    val context = LocalContext::current
+    val context = LocalContext.current
     val recordings by viewModel.recordings.collectAsState()
     val isRecordingEnabled by viewModel.isRecordingEnabled.collectAsState()
     val playbackState by viewModel.playbackState.collectAsState()
