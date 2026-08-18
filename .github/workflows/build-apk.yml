@@ -7,6 +7,9 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build Android APK
@@ -23,14 +26,11 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Make Gradle Wrapper Executable
-        run: chmod +x ./gradlew || true
+        run: chmod +x ./gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
 
       - name: Upload Debug APK Artifact
         uses: actions/upload-artifact@v4
@@ -54,7 +54,7 @@ jobs:
             - **Built-in Player**: Play, pause, and seek recordings in Jetpack Compose UI.
 
             #### 📥 Download
-            Download the APK below to install on your Android device (Android 12+ / API 31+).
+            Download the attached `app-debug.apk` file below to install on your Android device (Android 12+ / API 31+).
           files: app/build/outputs/apk/debug/app-debug.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
